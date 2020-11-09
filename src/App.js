@@ -6,10 +6,10 @@ import SignUp from './pages/SignUp';
 import { AuthProvider } from './contexts/AuthContext';
 import Dashboard from './pages/DashBoard';
 import Login from './pages/Login';
-import Browse from './pages/Browse';
+import Browse from './pages/NeoWs_Browse/Browse';
 import PrivateRoute from './components/PrivateRoute';
 import ForgotPassword from './pages/ForgotPassword';
-import Feed from './pages/Feed';
+import Container from './pages/NeoWs_Feed/Container';
 
 
 
@@ -31,7 +31,7 @@ function App() {
 
                   <Route path="/forgot-password" component={ForgotPassword} />
 
-                  <Route path="/feed" component={Feed} />
+                  <Route path="/feed" component={Container} />
 
                   
                 </Switch>

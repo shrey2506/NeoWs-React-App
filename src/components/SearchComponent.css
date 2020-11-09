@@ -1,4 +1,4 @@
-#search { 
+.search { 
      
     padding: 2px; 
     
@@ -9,11 +9,11 @@
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out; 
 } 
-#search:focus {
+.search:focus {
     width: 100%;
   }
   
-#search-button { 
+.search-button { 
     position: absolute; 
     top: 0; 
     border-radius: 5px; 

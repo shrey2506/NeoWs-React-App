@@ -47,7 +47,11 @@ const Header = () => {
     <React.Fragment>
       <Navbar color="light" light expand="md">
 
-      <div className="text-muted font-weight-bold font-italic" style={{fontSize: '4vh'}}>Test App</div>
+        <Link to="/dashboard">
+           <div className="text-muted font-weight-bold font-italic" style={{fontSize: '4vh'}}>Test App</div>
+        </Link>
+
+      
 
 
         <NavbarToggler onClick={toggle} />
@@ -55,15 +59,32 @@ const Header = () => {
           <Nav className="ml-auto" navbar>
 
 
-
-        
-          <React.Fragment>
+          
+          {currentUser && 
+            <React.Fragment>
               <NavItem>
-               
                 
+               <Link to="/browse">
+                 <NavLink>Nearby Asteroids</NavLink>
+               </Link>
               </NavItem>
               
-            </React.Fragment>
+            </React.Fragment>}
+
+
+          {currentUser && 
+          <React.Fragment>
+            <NavItem>
+              <Link to="/feed">
+                 <NavLink>Search By Date</NavLink>
+              </Link>
+              
+            </NavItem>  
+          </React.Fragment>}
+
+
+        
+        
 
 
           {currentUser && 

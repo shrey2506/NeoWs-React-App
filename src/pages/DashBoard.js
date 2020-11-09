@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import {  useHistory } from 'react-router-dom';
+import SearchComponent from '../components/SearchComponent';
 import Layout from '../components/Layout';
 
 export default function Dashboard() {
@@ -17,7 +18,7 @@ export default function Dashboard() {
 
   return (
     <Layout>
-      <div className="container-fluid" style={{ marginTop: '10vh' }}>
+      {/* <div className="container-fluid" style={{ marginTop: '10vh' }}>
         <div className="row">
           <div className="col-md-6 pb-4">
             <Card>
@@ -35,7 +36,9 @@ export default function Dashboard() {
           
           </div>
         </div>
-      </div>
+      </div> */}
+
+       <SearchComponent />
 
     </Layout>
   );
