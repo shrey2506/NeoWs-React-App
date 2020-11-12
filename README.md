@@ -1,3 +1,11 @@
+# A demonstration of the usage of NASA NeoWS APIs with React.js
+
+You can check it out here: https://neows-react-app.web.app/
+
+Documentation for NeoWS: https://api.nasa.gov/neo/?api_key=DEMO_KEY
+
+Get your free developer key from here: https://api.nasa.gov/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
