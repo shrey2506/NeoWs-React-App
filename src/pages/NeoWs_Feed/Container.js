@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-
+import {Container} from 'react-bootstrap';
 import "react-datepicker/dist/react-datepicker.css";
 import moment from "moment";
 import Layout from '../../components/Layout';
-import './Search.css'
 import { getNeoFeed } from "./API_endPoint";
 import Error from './Error';
 import NeoWsSearch from "./Search";
@@ -51,7 +50,7 @@ const NeoWsContainer = () => {
         <div className="uk-container">
         <Error error={error} />
 
-        <div className="center">
+        <Container className=" align-items-center justify-content-center">
             <NeoWsSearch
                 startDate={startDate}
                 endDate={endDate}
@@ -61,7 +60,7 @@ const NeoWsContainer = () => {
             />
 
             {asteroids && <Asteroids asteroidsCollection={asteroids} />}
-        </div>
+        </Container>
 
            
         </div>

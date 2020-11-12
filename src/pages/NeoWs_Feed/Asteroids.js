@@ -13,7 +13,7 @@ const Asteroids = ({ asteroidsCollection }) => {
   });
 
   return (
-    <Container className=" pt-3 pb-3 align-items-center " style={{ minHeight: "10vh" ,  marginBottom:'50px' }}>
+   
           
             <div>
                 {sortedAsteroidDates.map(asteroidsDate => (
@@ -21,10 +21,17 @@ const Asteroids = ({ asteroidsCollection }) => {
                 <h2>{asteroidsDate}</h2>
                 <div>
                   {asteroidsCollection[asteroidsDate].map(asteroid => (
-                    <div key={asteroid.id}>
-                      {asteroid.name}
+
+                    <Card className="mt-2 mb-2" key={asteroid.id}>
+                      <div className="text-muted left font-weight-bold">
+                         Name:  {asteroid.name}
+                      </div>
+                      <div className="text-muted left ">
+                         Id:  {asteroid.id}
+                      </div>
+                      
                     
-                    </div>
+                    </Card>
                   ))}
                 </div>
                 < hr />
@@ -34,7 +41,7 @@ const Asteroids = ({ asteroidsCollection }) => {
             </div>
             
          
-    </Container>
+    
    
   );
 };

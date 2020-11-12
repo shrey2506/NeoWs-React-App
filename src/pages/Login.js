@@ -19,7 +19,6 @@ export default function Login() {
 
     async function handleSubmit(e) {
         e.preventDefault();
-
         setLoading(true);
         try {
             setError('');
@@ -28,9 +27,7 @@ export default function Login() {
         } catch (err) {
             setError(" " + err);
         }
-
         setLoading(false);
-
     }
 
 

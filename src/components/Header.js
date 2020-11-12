@@ -51,12 +51,20 @@ const Header = () => {
            <div className="text-muted font-weight-bold font-italic" style={{fontSize: '4vh'}}>Test App</div>
         </Link>
 
-      
-
-
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+
+
+          {currentUser && 
+          <React.Fragment>
+            <NavItem>
+              <Link to="/saved-asteroids">
+                 <NavLink>Saved Asteroids</NavLink>
+              </Link>
+              
+            </NavItem>  
+          </React.Fragment>}
 
 
           
@@ -82,11 +90,6 @@ const Header = () => {
             </NavItem>  
           </React.Fragment>}
 
-
-        
-        
-
-
           {currentUser && 
 
            <React.Fragment>
@@ -97,13 +100,9 @@ const Header = () => {
               
             </React.Fragment>}
 
-           
-
           </Nav>
         </Collapse>
       </Navbar>
-
-     
 
     </React.Fragment>
   );

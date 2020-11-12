@@ -10,6 +10,7 @@ import Browse from './pages/NeoWs_Browse/Browse';
 import PrivateRoute from './components/PrivateRoute';
 import ForgotPassword from './pages/ForgotPassword';
 import Container from './pages/NeoWs_Feed/Container';
+import SavedAsteroids from './components/Save_Asteroids';
 
 
 
@@ -32,6 +33,8 @@ function App() {
                   <Route path="/forgot-password" component={ForgotPassword} />
 
                   <Route path="/feed" component={Container} />
+
+                  <Route path="/saved-asteroids" component={SavedAsteroids} />
 
                   
                 </Switch>

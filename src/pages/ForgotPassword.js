@@ -7,16 +7,12 @@ import Layout  from '../components/Layout';
 
 export default function ForgotPassword() {
    const emailRef=useRef();
-  
-  
+    
    const [error,setError]=useState('');
    const [loading,setLoading]=useState(false);
    const [message,setMessage]=useState('');
-   
 
    const {resetPassword  }=useAuth();
-
-  
 
   async function handleSubmit(e){
        e.preventDefault();
